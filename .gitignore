@@ -1,0 +1,57 @@
+# OS, Editor or Tools folders
+############
+## IDE
+############
+._*
+.cache
+.classpath
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+*.iml
+# Microsoft Office Temp Files
+~$*
+# Libre or Open Office Temp Files
+.~lock.*
+
+############
+## Maven
+############
+# Maven output dirs
+target/
+target-grunt/
+# Maven Release files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+############
+## Windows
+############
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+.DS_Store
+
+############
+## General folders and files to ignore
+############
+_gh_pages
+tmp
+temp
+bkp
+bkps
+backup

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Add custom tools to Tawja Maven Site Tools. The tools.xml file is included in the classpath and Velocity finds it. -->
+<tools>
+  <toolbox scope="application">
+    <tool key="config"    class="org.tawja.maven.skin.tools.SkinConfigTool"/>
+    <tool key="htmlTool"  class="org.tawja.maven.skin.tools.HtmlTool"/>
+    <tool key="uriTool"   class="org.tawja.maven.skin.tools.URITool"/>
+  </toolbox>
+</tools>

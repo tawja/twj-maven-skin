@@ -1,0 +1,11 @@
+Current : Cf. Public_Share\Libs_MavenSkin
+- Bootstrap : bootstrap-3.3.2-dist.zip
+	http://getbootstrap.com/getting-started
+- HightlightJs : highlight.js-8.4.zip
+	https://highlightjs.org/download/
+- Html5Shiv : html5shiv-3.7.2.zip
+	https://github.com/afarkas/html5shiv
+- JQuery : jquery-2.1.3.zip
+	https://jquery.com/download/
+- LightBox : lightbox2-2.7.1.zip
+	http://lokeshdhakar.com/projects/lightbox2/

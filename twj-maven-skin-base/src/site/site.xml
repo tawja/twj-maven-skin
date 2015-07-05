@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2015 Tawja (http://www.tawja.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/DECORATION/1.4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.4.0 http://maven.apache.org/xsd/decoration-1.4.0.xsd"
+         name="${project.name}"
+>
+
+    <!-- Google Analytics not inherited for some reason -->
+    <googleAnalyticsAccountId>${tawja.site.googleAnalyticsCode}</googleAnalyticsAccountId>
+
+    <custom>
+        <twjSkin>
+            <pages>
+                <index project="twj-maven-skin" combine.self="override">
+                    <shortTitle>Usage</shortTitle>
+                    <breadcrumbs>true</breadcrumbs>
+                    <!-- no ToC on the main index page -->
+                    <toc>false</toc>
+                    <sections>
+                        <columns>2</columns>
+                        <body />
+                    </sections>
+                </index>
+                <config>
+                    <toc>false</toc>
+                </config>
+                <layouts>
+                    <tocTopMax>-1</tocTopMax>
+                </layouts>
+                <themes-index>
+                    <toc>false</toc>
+                    <sections>
+                        <body />
+                        <thumbs>3</thumbs>
+                    </sections>
+                </themes-index>
+                <themes-bootswatch-cerulean>
+                    <theme>bootswatch-cerulean</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-cerulean>
+
+                <themes-bootswatch-cosmo>
+                    <theme>bootswatch-cosmo</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-cosmo>
+
+                <themes-bootswatch-cyborg>
+                    <theme>bootswatch-cyborg</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-cyborg>
+
+                <themes-bootswatch-darkly>
+                    <theme>bootswatch-darkly</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-darkly>
+
+                <themes-bootswatch-flatly>
+                    <theme>bootswatch-flatly</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-flatly>
+
+                <themes-bootswatch-journal>
+                    <theme>bootswatch-journal</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-journal>
+
+                <themes-bootswatch-lumen>
+                    <theme>bootswatch-lumen</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-lumen>
+
+                <themes-bootswatch-paper>
+                    <theme>bootswatch-paper</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-paper>
+
+                <themes-bootswatch-readable>
+                    <theme>bootswatch-readable</theme>
+                    <toc offsetTop="250">top</toc>
+                </themes-bootswatch-readable>
+
+                <themes-bootswatch-sandstone>
+                    <theme>bootswatch-sandstone</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-sandstone>
+
+                <themes-bootswatch-simplex>
+                    <theme>bootswatch-simplex</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-simplex>
+
+                <themes-bootswatch-slate>
+                    <theme>bootswatch-slate</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-slate>
+
+                <themes-bootswatch-spacelab>
+                    <theme>bootswatch-spacelab</theme>
+                </themes-bootswatch-spacelab>
+
+                <themes-bootswatch-superhero>
+                    <theme>bootswatch-superhero</theme>
+                    <toc offsetTop="225">top</toc>
+                </themes-bootswatch-superhero>
+
+                <themes-bootswatch-united>
+                    <theme>bootswatch-united</theme>
+                </themes-bootswatch-united>
+
+                <themes-bootswatch-yeti>
+                    <theme>bootswatch-yeti</theme>
+                </themes-bootswatch-yeti>
+                <advanced>
+                    <sections>
+                        <body />
+                        <columns>2</columns>
+                        <body />
+                    </sections>
+                </advanced>
+                <toc-sidebar>
+                    <toc>sidebar</toc>
+                </toc-sidebar>
+            </pages>
+        </twjSkin>
+    </custom>
+
+</project>

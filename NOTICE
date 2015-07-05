@@ -1,0 +1,33 @@
+Tawja Maven skin and Velocity tools
+Copyright 2015 Jaafar BENNANI-SMIRES
+
+The work is based on following projects (GitHub forks) - Licensed under the Apache License v2.0 : 
+
++Msb3 Maven Skin][msb3] : http://github.com/tunguski/msb3-maven-skin
++Reflow Maven Skin][reflow] : http://github.com/andriusvelykis/reflow-maven-skin
+
+Following tools and libraries are included :
+
+Twitter Bootstrap - Licensed under the Apache License v2.0.
+This product includes software developed by
+Twitter (http://twitter.github.com/bootstrap).
+
+Glyphicons Halflings (part of Bootstrap by Twitter) - licensed under the Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+This product includes software developed by
+Jan Kovařík (http://glyphicons.com)
+
+jQuery - licensed under the MIT License.
+This product includes software developed by
+jQuery (http://jquery.org)
+
+Lightbox2 - licensed under the Creative Commons Attribution 2.5 License (CC BY 2.5)
+This product includes software developed by
+Lokesh Dhakar (http://lokeshdhakar.com/projects/lightbox2)
+
+HighlightJS - licensed under the BSD Licence
+This product includes software developed by
+Ivan Sagalaev (http://github.com/isagalaev/highlight.js)
+
+Html5Shiv - licensed under the MIT and GPL2 Licences
+This product includes software developed by
+Lokesh Dhakar (http://github.com/aFarkas/html5shiv)

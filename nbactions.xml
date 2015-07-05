@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2015 Tawja (http://www.tawja.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+--><actions>
+    <action>
+        <actionName>CUSTOM-InstallNotRecursive</actionName>
+        <displayName>Install Not Recursive</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>install</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Clean Not Recursive</actionName>
+        <displayName>Clean Not Recursive</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>clean</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Not Recursive</actionName>
+        <displayName>Site Not Recursive</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>site</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Stage Clean Not Recursive</actionName>
+        <displayName>Site Stage Clean Not Recursive</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>clean</goal>
+            <goal>site</goal>
+            <goal>site:stage</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Deploy Not Recursive</actionName>
+        <displayName>Site Deploy Not Recursive</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>site:deploy</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Deploy</actionName>
+        <displayName>Deploy Not Recursive</displayName>
+        <goals>
+            <goal>deploy</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site</actionName>
+        <displayName>Site</displayName>
+        <goals>
+            <goal>site</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Stage Clean</actionName>
+        <displayName>Site Stage Clean</displayName>
+        <goals>
+            <goal>clean</goal>
+            <goal>site</goal>
+            <goal>site:stage</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Site Deploy</actionName>
+        <displayName>Site Deploy</displayName>
+        <goals>
+            <goal>site:deploy</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Deploy</actionName>
+        <displayName>Deploy</displayName>
+        <goals>
+            <goal>deploy</goal>
+        </goals>
+    </action>
+</actions>

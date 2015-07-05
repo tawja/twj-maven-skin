@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  
+    <parent>
+        <groupId>org.tawja.maven.skin</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <!--<relativePath>../pom.xml</relativePath>-->
+    </parent>
+
+    <groupId>org.tawja.maven.skin</groupId>
+    <artifactId>twj-maven-skin-base</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Tawja : Maven : Skin : Base</name>
+    <description>Tawja Maven Skin is an Apache Maven site skin built on Bootstrap 3. 
+        The work is based on Reflow and Msb3 maven skin projects.</description>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources/</directory>
+            </resource>
+            <resource>
+                <!-- Filter skin template to add generator version -->
+                <directory>src/main/resources/</directory>
+                <includes>
+                    <include>META-INF/maven/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>${maven-dependency-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>include-images</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.tawja.design</groupId>
+                                    <artifactId>twj-design-logos</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>zip</type>
+                                    <classifier>twj-design</classifier>
+                                    <includes>**</includes>
+                                    <excludes>**/test-*.*,**/sample-**,**/demo-*.*</excludes>
+                                    <outputDirectory>${project.build.directory}/classes/img</outputDirectory>
+                                </artifactItem>
+                            </artifactItems>
+                            <excludeTransitive>true</excludeTransitive>
+                            <excludeTypes>pom</excludeTypes>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>${maven-antrun-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>update-images</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <copy file="${project.build.directory}/classes/img/default/logos/${organization.code}-logo.png" tofile="${project.build.directory}/classes/img/logo.png" overwrite="true"/>
+                                <copy file="${project.build.directory}/classes/img/small/logos/${organization.code}-logo.png" tofile="${project.build.directory}/classes/img/logo-small.png" overwrite="true"/>
+                                <copy file="${project.build.directory}/classes/img/big/logos/${organization.code}-logo.png" tofile="${project.build.directory}/classes/img/logo-big.png" overwrite="true"/>
+                                <copy file="${project.build.directory}/classes/img/default/icons/favicon.ico" tofile="${project.build.directory}/classes/favicon.ico" overwrite="true"/>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <!-- Override resource filtering delimiters to avoid filtering Velocity variables,
+                    which have the same pattern ${replace.me}. Instead, using @replace.me@. -->
+                    <useDefaultDelimiters>false</useDefaultDelimiters>
+                    <delimiters>
+                        <delimiter>@</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>                                    
+            <groupId>org.tawja.design</groupId>
+            <artifactId>twj-design-logos</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <type>zip</type>
+            <classifier>twj-design</classifier>
+        </dependency>
+    </dependencies>
+
+</project>

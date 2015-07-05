@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2015 Tawja (http://www.tawja.org)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/DECORATION/1.4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.4.0 http://maven.apache.org/xsd/decoration-1.4.0.xsd"
+         name="${project.name}"
+>
+
+    <!-- Google Analytics not inherited for some reason -->
+    <googleAnalyticsAccountId>${tawja.site.googleAnalyticsCode}</googleAnalyticsAccountId>
+
+    <custom>
+        <twjSkin>
+            <pages>
+                <index project="twj-maven-skin-base" combine.self="override">
+                    <shortTitle>Usage</shortTitle>
+                    <breadcrumbs>true</breadcrumbs>
+                    <!-- no ToC on the main index page -->
+                    <toc>false</toc>
+                    <sections>
+                        <columns>2</columns>
+                        <body />
+                    </sections>
+                </index>
+                <config>
+                    <toc>false</toc>
+                </config>
+                <layouts>
+                    <tocTopMax>-1</tocTopMax>
+                </layouts>
+                <advanced>
+                    <sections>
+                        <body />
+                        <columns>2</columns>
+                        <body />
+                    </sections>
+                </advanced>
+                <toc-sidebar>
+                    <toc>sidebar</toc>
+                </toc-sidebar>
+            </pages>
+        </twjSkin>
+    </custom>
+
+</project>
