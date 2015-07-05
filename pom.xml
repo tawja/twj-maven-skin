@@ -18,6 +18,10 @@
     <packaging>pom</packaging>
 	
     <name>Tawja : Maven : Skin</name>
+    <description>
+		Tawja Maven Skin is an Apache Maven site skin built on Bootstrap 3. 
+        The work is based on Reflow and Msb3 maven skin projects.
+	</description>
 
     <url>${project.organization.url}/project/maven/skin</url>
 
