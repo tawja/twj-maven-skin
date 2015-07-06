@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 	
     <parent>
-        <groupId>org.tawja</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+		<groupId>org.tawja.maven.skin</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 

@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>${build-helper-maven-plugin.version}</version>
+                <version>1.9.1</version>
                 <executions>
                     <execution>
                         <id>generate-sources</id>
@@ -59,7 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>${maven-resources-plugin.version}</version>
+                <version>2.7</version>
                 <configuration>
                     <!-- Override resource filtering delimiters to avoid filtering Velocity variables,
                     which have the same pattern ${replace.me}. Instead, using @replace.me@. -->
@@ -73,7 +73,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>${maven-shade-plugin.version}</version>
+                <version>2.4</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
