@@ -11,7 +11,7 @@
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 
-    <groupId>org.tawja</groupId>
+    <groupId>org.tawja.maven.skin</groupId>
     <artifactId>twj-maven-skin-tools</artifactId>
     <version>2015.07.06032029</version>
 
