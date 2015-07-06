@@ -25,6 +25,23 @@
 
     <url>${project.organization.url}/project/maven/skin</url>
 
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+	
+	<properties>
+        <!-- Environment name with tawja-env-* profiles -->
+        <tawja.deploy.envName>test</tawja.deploy.envName>
+        <tawja.repo.envName>prod</tawja.repo.envName>
+        <!-- Inner Dependencies Versions -->
+        <twj-maven-utils.version>1.0.0-SNAPSHOT</twj-maven-utils.version>
+	</properties>
+
     <modules>
         <module>twj-maven-skin-tools</module>
         <module>twj-maven-skin-base</module>
@@ -160,5 +177,15 @@
             </snapshots>
         </pluginRepository>
      </pluginRepositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.tawja.maven</groupId>
+                <artifactId>twj-maven-utils</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
