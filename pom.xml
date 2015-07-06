@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>root</artifactId>
-        <version>2015.07.06103711</version>
+        <version>2015.07.06195742</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.maven.skin</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06161631</version>
+    <version>2015.07.06200314</version>
 	
     <packaging>pom</packaging>
 	
@@ -64,7 +64,7 @@
                     <dependency>
                         <groupId>org.tawja.maven.skin</groupId>
                         <artifactId>twj-maven-skin-tools</artifactId>
-                        <version>2015.07.06161631</version>
+                        <version>2015.07.06200314</version>
                     </dependency>
                     <!-- Reflow skin requires Velocity >= 1.7  -->
                     <dependency>
@@ -84,4 +84,81 @@
         </plugins>
     </build>
   
+    <repositories>
+        <!-- Tawja Snapshots Repository -->
+        <repository> 
+            <id>twj-snapshots-repository</id> 
+            <name>Tawja Snapshots Repository</name>
+            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <!-- Tawja Releases Repository -->
+        <repository> 
+            <id>twj-releases-repository</id> 
+            <name>Tawja Releases Repository</name>
+            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <!-- Tawja Releases LTS Repository -->
+        <repository> 
+            <id>twj-releases-lts-repository</id> 
+            <name>Tawja Releases LTS Repository</name>
+            <url>http://repo.tawja.org/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <!-- Tawja Snapshots Repository -->
+        <pluginRepository> 
+            <id>twj-snapshots-repository</id> 
+            <name>Tawja Snapshots Repository</name>
+            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <!-- Tawja Releases Repository -->
+        <pluginRepository> 
+            <id>twj-releases-repository</id> 
+            <name>Tawja Releases Repository</name>
+            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <!-- Tawja Releases LTS Repository -->
+        <pluginRepository> 
+            <id>twj-releases-lts-repository</id> 
+            <name>Tawja Releases LTS Repository</name>
+            <url>http://repo.tawja.org/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+     </pluginRepositories>
+
 </project>
