@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>root</artifactId>
-        <version>2015.07.06195742</version>
+        <version>2015.07.07015251</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.maven.skin</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06200314</version>
+    <version>2015.07.07122736</version>
 	
     <packaging>pom</packaging>
 	
@@ -25,12 +25,41 @@
 
     <url>${project.organization.url}/project/maven/skin</url>
 
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+	
+	<properties>
+        <!-- Inner Dependencies Versions -->
+        <twj-maven-utils.version>1.0.0-SNAPSHOT</twj-maven-utils.version>
+	</properties>
+
     <modules>
         <module>twj-maven-skin-tools</module>
         <module>twj-maven-skin-base</module>
         <module>twj-maven-skin-impl</module>
     </modules>
 
+    <profiles>
+        <!-- Environment to sub-domains -->
+        <profile>
+            <id>tawja-env</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+				<!-- Environment name with tawja-env-* profiles -->
+				<tawja.deploy.envName>test</tawja.deploy.envName>
+				<tawja.repo.envName>prod</tawja.repo.envName>
+            </properties>
+		</profile>
+	</profiles>
+	
     <distributionManagement>
         <site>
             <id>tawja-website</id>
@@ -64,7 +93,7 @@
                     <dependency>
                         <groupId>org.tawja.maven.skin</groupId>
                         <artifactId>twj-maven-skin-tools</artifactId>
-                        <version>2015.07.06200314</version>
+                        <version>2015.07.07122736</version>
                     </dependency>
                     <!-- Reflow skin requires Velocity >= 1.7  -->
                     <dependency>
@@ -160,5 +189,15 @@
             </snapshots>
         </pluginRepository>
      </pluginRepositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.tawja.maven</groupId>
+                <artifactId>twj-maven-utils</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
