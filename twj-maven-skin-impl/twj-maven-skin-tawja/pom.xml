@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.tawja.maven.skin.impl</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>2015.07.07122736</version>
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 
     <groupId>org.tawja.maven.skin.impl</groupId>
     <artifactId>twj-maven-skin-tawja</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2015.07.07122736</version>
 
     <name>Tawja : Maven : Skin : Impl : Tawja</name>
     <description>Tawja Maven Skin is an Apache Maven site skin built on Bootstrap 3. 
@@ -97,7 +97,7 @@
         <dependency>
             <groupId>org.tawja.maven.skin</groupId>
             <artifactId>twj-maven-skin-base</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>2015.07.07122736</version>
         </dependency>
     </dependencies>
 	
