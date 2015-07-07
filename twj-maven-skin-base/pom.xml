@@ -51,7 +51,6 @@
                                 <artifactItem>
                                     <groupId>org.tawja.design</groupId>
                                     <artifactId>twj-design-logos</artifactId>
-                                    <version>1.0.0-SNAPSHOT</version>
                                     <type>zip</type>
                                     <classifier>twj-design</classifier>
                                     <includes>**</includes>
