@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.tawja.maven.skin</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.07122736</version>
+        <version>2015.07.08185903</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.maven.skin.impl</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.07122736</version>
+    <version>2015.07.08185903</version>
 	
     <packaging>pom</packaging>
 	
@@ -29,7 +29,7 @@
         <site>
             <id>tawja-website</id>
             <name>Tawja Documentation Website</name>
-            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/project/maven/skin/impl</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.site.webPath}/${tawja.deploy.envName}/${organization.domain}/project/maven/skin/impl</url>
         </site>
     </distributionManagement>
 
