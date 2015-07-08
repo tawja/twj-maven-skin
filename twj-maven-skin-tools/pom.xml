@@ -24,7 +24,7 @@
         <site>
             <id>tawja-website</id>
             <name>Tawja Documentation Website</name>
-            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/project/maven/skin/twj-maven-skin-tools</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.site.webPath}/${tawja.deploy.envName}/${organization.domain}/project/maven/skin/twj-maven-skin-tools</url>
         </site>
     </distributionManagement>
 
