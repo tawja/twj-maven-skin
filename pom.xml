@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>root</artifactId>
-        <version>2015.07.09222743</version>
+        <version>2015.07.10152850</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.maven.skin</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.09222923</version>
+    <version>2015.07.10153113</version>
 	
     <packaging>pom</packaging>
 	
@@ -93,7 +93,7 @@
                     <dependency>
                         <groupId>org.tawja.maven.skin</groupId>
                         <artifactId>twj-maven-skin-tools</artifactId>
-                        <version>2015.07.09222923</version>
+                        <version>2015.07.10153113</version>
                     </dependency>
                     <!-- Reflow skin requires Velocity >= 1.7  -->
                     <dependency>
@@ -118,7 +118,7 @@
         <repository> 
             <id>twj-snapshots-repository</id> 
             <name>Tawja Snapshots Repository</name>
-            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <url>http://tawja.microsfair.com/repo/maven/snapshots</url> 
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -130,7 +130,7 @@
         <repository> 
             <id>twj-releases-repository</id> 
             <name>Tawja Releases Repository</name>
-            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <url>http://tawja.microsfair.com/repo/maven/releases</url> 
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -156,7 +156,7 @@
         <pluginRepository> 
             <id>twj-snapshots-repository</id> 
             <name>Tawja Snapshots Repository</name>
-            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <url>http://tawja.microsfair.com/repo/maven/snapshots</url> 
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -168,7 +168,7 @@
         <pluginRepository> 
             <id>twj-releases-repository</id> 
             <name>Tawja Releases Repository</name>
-            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <url>http://tawja.microsfair.com/repo/maven/releases</url> 
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -195,7 +195,7 @@
             <dependency>
                 <groupId>org.tawja.maven</groupId>
                 <artifactId>twj-maven-utils</artifactId>
-                <version>2015.07.09051423</version>
+                <version>2015.07.10113330</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
