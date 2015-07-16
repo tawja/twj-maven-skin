@@ -13,7 +13,7 @@
 	
     <groupId>org.tawja.maven.skin</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.15151326</version>
+    <version>2015.07.16223022</version>
 	
     <packaging>pom</packaging>
 	
@@ -93,7 +93,7 @@
                     <dependency>
                         <groupId>org.tawja.maven.skin</groupId>
                         <artifactId>twj-maven-skin-tools</artifactId>
-                        <version>2015.07.15151326</version>
+                        <version>2015.07.16223022</version>
                     </dependency>
                     <!-- Reflow skin requires Velocity >= 1.7  -->
                     <dependency>
@@ -195,7 +195,7 @@
             <dependency>
                 <groupId>org.tawja.maven</groupId>
                 <artifactId>twj-maven-utils</artifactId>
-                <version>2015.07.15145231</version>
+                <version>2015.07.16160606</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
